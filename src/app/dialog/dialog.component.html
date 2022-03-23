@@ -1,0 +1,54 @@
+<form [formGroup]="songForm">
+    <h1 mat-dialog-title>Add Songs</h1>
+<div mat-dialog-content>
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Album</mat-label>
+          <mat-select placeholder="Category"> 
+            <mat-option value="Album1">Album1 </mat-option>
+            <mat-option value="Album2">Album2 </mat-option>
+            <mat-option value="Album3">Album3 </mat-option>
+            <input formControlName="Album" matInput placeholder="Album">
+        </mat-select>
+          
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Song</mat-label>
+          <mat-select placeholder="Songs"> 
+            
+            
+             <mat-option value="SongOne"><input type="text" placeholder="Firstsong"></mat-option> 
+             <input formControlName="Song1" matInput placeholder="Song1">
+             <input formControlName="Composer2" matInput placeholder="Composer1">
+          <input formControlName="Singer2" matInput placeholder="Singer1">
+      
+
+             
+            <mat-option value="Song2"><input type="text" placeholder="Secondsong"></mat-option>
+            <input formControlName="Song2" matInput placeholder="Song2">
+            <input formControlName="Composer2" matInput placeholder="Composer1">
+          <input formControlName="Singer2" matInput placeholder="Singer1">
+        
+
+        
+            <mat-option value="Song3"><input type="text" placeholder="Thirdsong"></mat-option>
+            <input formControlName="Song3" matInput placeholder="Song3">
+            <input formControlName="Composer3" matInput placeholder="Composer3">
+          <input formControlName="Singer3" matInput placeholder="Singer3">
+          
+
+        </mat-select>
+        </mat-form-field>
+      </p>
+    </div>      
+</form>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="primar" (click)="addSongs()"  >Save</button>
+    <button mat-raised-button color="warn">Close</button>
+  </div>
+
+
+

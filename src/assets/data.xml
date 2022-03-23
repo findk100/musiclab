@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+
+<movie> 
+<mov> 
+<id>1</id>
+<album> Akon </album>
+<song> Lonely </song>
+<lyricist> akon.a </lyricist>
+<composer> akon.b </composer>
+<singer> akon.c </singer>
+
+
+</mov>
+</movie>
